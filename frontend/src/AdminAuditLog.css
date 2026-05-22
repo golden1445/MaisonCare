@@ -1,0 +1,68 @@
+/* AdminAuditLog.css */
+.audit-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.audit-main {
+    margin-left: 280px;
+    flex: 1;
+    padding: 40px;
+    width: calc(100vw - 280px);
+}
+
+.audit-table-container {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.audit-table th {
+    background: #f8fafc;
+    padding: 15px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #64748b;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.audit-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+/* Badge Styling */
+.log-type {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+.type-success { background: #dcfce7; color: #166534; }
+.type-warning { background: #fef9c3; color: #854d0e; } 
+.type-danger { background: #fee2e2; color: #991b1b; }  
+
+
+.ip-address {
+    font-family: 'Courier New', Courier, monospace;
+    color: #64748b;
+    font-size: 13px;
+}

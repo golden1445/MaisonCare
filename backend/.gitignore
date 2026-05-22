@@ -1,0 +1,17 @@
+# Dependency folders
+node_modules/
+
+# Environment variables (Sabse zaroori!)
+.env
+
+# Uploaded files (Taaki personal uploads git par na jayein)
+uploads/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific files
+.DS_Store
+thumbs.db

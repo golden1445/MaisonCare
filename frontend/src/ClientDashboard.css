@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  overflow: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sidebar design */
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-brand .logo {
+  background: linear-gradient(135deg, #075985 0%, #0a6e9e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* .user-profile {
+  padding: 20px 15px;
+  background: rgba(7, 89, 133, 0.15);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(7, 89, 133, 0.3);
+} */
+.user-profile {
+  padding: 20px 15px;
+  margin-bottom: 30px;
+}
+.user-info .welcome {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 5px;
+}
+
+.user-info .username {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  padding: 12px 18px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background: #075985;
+  color: white;
+  box-shadow: 0 4px 12px rgba(7, 89, 133, 0.3);
+}
+
+.nav-link:hover:not(.active) {
+  background: rgba(7, 89, 133, 0.2);
+  color: #e2e8f0;
+}
+ .logout-text {
+  color: #f87171;
+  cursor: pointer;
+ }
+ .logout-text:hover {
+   color: #ef4444;
+ }
+
+
+/*.logout-button {
+  margin-top: auto;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}*/
+
+.logout-button:hover {
+  background: #ef4444;
+  transform: translateY(-1px);
+}
+
+/* Main Contents */
+.main-viewport {
+  flex-grow: 1;
+  width: calc(100% - 280px);
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.main-header {
+  margin-bottom: 30px;
+}
+
+.page-title {
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Cards */
+.glass-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(7, 89, 133, 0.1);
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 20px 30px -12px rgba(7, 89, 133, 0.15);
+  transform: translateY(-2px);
+}
+
+.applications-card .card-header h3 {
+  color: #075985;
+}
+
+.requests-card .card-header h3 {
+  color: #075985;
+}
+
+.jobs-card .card-header h3 {
+  color: #075985;
+}
+
+.card-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0f2fe;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #075985;
+}
+
+/* Job Item */
+.job-list-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-item-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: #f8fafc;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.job-item-row:hover {
+  background: #f1f5f9;
+  border-color: #075985;
+  transform: translateX(4px);
+}
+
+.job-info {
+  flex: 1;
+}
+
+.applicant-name,
+.maid-name,
+.job-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.job-details-text {
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+}
+
+/* Status Tag */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.status-tag.open {
+  background: #d4dad6;
+  color: #166534;
+}
+
+.status-tag.pending {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.status-tag.confirmed {
+  background: #7c7f7d;
+  color: #166534;
+}
+
+.status-tag.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-tag.completed {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.status-tag.applied {
+  background: #dbeafe;
+  color: #1e40af;
+}
+.status-tag.accepted {
+  background: #d4dad6;
+  color: black;
+}
+
+.status-tag.rejected {
+  background: #fee2e2;
+  color: black;
+}
+
+/* Empty */
+.empty-text {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 30px;
+  background: #f8fafc;
+  border-radius: 16px;
+}
+
+.loading-text {
+  color: #075985;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Scrollbar design */
+.main-viewport::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-viewport::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.main-viewport::-webkit-scrollbar-thumb {
+  background: #075985;
+  border-radius: 10px;
+}
+
+.main-viewport::-webkit-scrollbar-thumb:hover {
+  background: #0a6e9e;
+}
+
+/* for responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 240px;
+    min-width: 240px;
+    padding: 20px 15px;
+  }
+  
+  .main-viewport {
+    width: calc(100% - 240px);
+    padding: 20px;
+  }
+  
+  .glass-card {
+    padding: 20px;
+  }
+  
+  .job-item-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .status-tag {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .main-viewport {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .card-header h3 {
+    font-size: 18px;
+  }
+}

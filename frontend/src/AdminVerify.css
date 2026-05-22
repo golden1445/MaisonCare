@@ -1,0 +1,95 @@
+/* AdminVerify.css */
+.verify-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.verify-main {
+    margin-left: 280px; /* Sidebar space */
+    flex: 1;
+    padding: 40px;
+    width: calc(100vw - 280px);
+}
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    color: #64748b;
+    transition: 0.2s;
+}
+
+.filter-btn.active {
+    background: #38bdf8;
+    color: white;
+    border-color: #38bdf8;
+}
+
+.verify-table {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.verify-table th {
+    background: #f1f5f9;
+    padding: 15px 20px;
+    text-align: left;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.verify-table td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #1e293b;
+    font-size: 15px;
+}
+
+.doc-btn {
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.action-btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.approve-btn { background: #10b981; color: white; }
+.reject-btn { background: #ef4444; color: white; }
